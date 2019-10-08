@@ -38,10 +38,5 @@ steps:
     projects: '**/*.Tests.csproj'
     arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
 
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'push'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)**/*.nupkg'
-    nuGetFeedType: 'internal'
-    publishVstsFeed: '3f6086ce-31fb-4b69-bb91-42031acf8486'
+- task: PublishBuildArtifacts@1
 
