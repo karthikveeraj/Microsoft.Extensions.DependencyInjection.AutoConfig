@@ -32,6 +32,11 @@ steps:
     projects: '**/*.Tests.csproj'
     arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
 
+
+- powershell: |
+    Write-Host $(Build.ArtifactStagingDirectory)
+  displayName: local variable
+
 - task: DotNetCoreCLI@2
   inputs:
     command: 'push'
