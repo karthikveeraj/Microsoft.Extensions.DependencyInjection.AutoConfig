@@ -59,7 +59,7 @@ namespace Honeywell.Isp.Services.Esm.Host.CoreConsole
                                     .Build() ?? throw new NullReferenceException("Failed to create 'Configuration' instance.");
 
                 var provider = new ServiceCollection()
-                                    .AddAutoTypeResolver(configuration) \\ <--- Use this statement for automatic registrations.
+                                    .AddAutoTypeResolver(configuration) // <--- Use this statement for automatic registrations.
                                     .BuildServiceProvider() ?? throw new NullReferenceException("Failed to create the 'ServiceProvider' instance.");
                                     
                 // Now, use provider here onwards to resolve registered types!
