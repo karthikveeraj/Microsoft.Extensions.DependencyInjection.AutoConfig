@@ -42,6 +42,7 @@ steps:
   inputs:
     command: pack
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    publishFeedCredentials: 'karthikveeraj'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
     zipAfterPublish: True
 
