@@ -41,7 +41,7 @@ dotnet add package Microsoft.Extensions.DependencyInjection.AutoConfig
 
 ## Using AutoConfig
 ```C#
-namespace Honeywell.Isp.Services.Esm.Host.CoreConsole
+namespace Microsoft.Extensions.DependencyInjection.AutoConfig
 {
     using System;
     using Microsoft.Extensions.Configuration;
