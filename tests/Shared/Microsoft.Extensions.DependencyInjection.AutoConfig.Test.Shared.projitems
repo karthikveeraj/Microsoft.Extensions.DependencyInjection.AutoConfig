@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>0c7ee911-607d-4733-baf0-3359931df8cc</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Microsoft.Extensions.DependencyInjection.AutoConfig.Test.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Demo1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Demo2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DemoMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DummyTypeRegistration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IDemo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IDemoMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IScopedMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ScopedMessage.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>91d10c15-70ad-4dfc-9942-3f775004e125</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Microsoft.Extensions.DependencyInjection.Models</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AssemblyTypeMap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DependencyInjectionConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ITypeRegistration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NameType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TypeMap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TypeMapCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DependencyInjectionUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TypeRegistration.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,24 @@
+﻿{
+  "dependencyInjectionConfig": {
+    "registerAssemblies": [
+      {
+        "order": 1,
+        "type": "Transient",
+        "name": "Microsoft.Extensions.DependencyInjection.AutoConfig.Tests.dll"
+      }
+    ],
+
+    "registerTypes": [
+      {
+        "from": "Microsoft.Extensions.DependencyInjection.ITypeRegistration, Microsoft.Extensions.DependencyInjection.AutoConfig",
+        "to":   "Microsoft.Extensions.DependencyInjection.TypeRegistration,  Microsoft.Extensions.DependencyInjection.AutoConfig",
+        "type": "Singleton"
+      },
+      {
+        "from": "Microsoft.Extensions.DependencyInjection.AutoConfig.Tests.IScopedMessage, Microsoft.Extensions.DependencyInjection.AutoConfig.Tests",
+        "to":   "Microsoft.Extensions.DependencyInjection.AutoConfig.Tests.ScopedMessage,  Microsoft.Extensions.DependencyInjection.AutoConfig.Tests",
+        "type": "Scoped"
+      }
+    ]
+  }
+}

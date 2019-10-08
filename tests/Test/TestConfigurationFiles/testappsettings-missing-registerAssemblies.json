@@ -1,0 +1,19 @@
+﻿{
+  "dependencyInjectionConfig": {
+    "registerAssemblies": [
+      {
+        "order": 1,
+        "type": "Transient",
+        "name": "Microsoft.Extensions.DependencyInjection.AutoConfig.Tests1.dll"
+      }
+    ],
+
+    "registerTypes": [
+      {
+        "from": "Microsoft.Extensions.DependencyInjection.ITypeRegistration, Microsoft.Extensions.DependencyInjection.AutoConfig",
+        "to": "Microsoft.Extensions.DependencyInjection.TypeRegistration, Microsoft.Extensions.DependencyInjection.AutoConfig",
+        "type": "Transient"
+      }
+    ]
+  }
+}
