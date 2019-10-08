@@ -40,11 +40,8 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
-    command: publish
+    command: pack
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
     zipAfterPublish: True
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
-    artifactName: 'Microsoft.Extensions.DependencyInjection.AutoConfig'
