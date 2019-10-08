@@ -30,17 +30,11 @@ steps:
   inputs:
     command: test
     projects: '**/*.Tests.csproj'
-    arguments: '--configuration $(buildConfiguration)'
-
-- task: DotNetCoreCLI@2
-  inputs:
-    command: test
-    projects: '**/*.Tests.csproj'
     arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'push'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
+    packagesToPush: '*Microsoft.Extensions.DependencyInjection.AutoConfig*.nupkg'
     nuGetFeedType: 'internal'
     publishVstsFeed: 'c7c0e002-e845-4942-ba10-724e9111e4c1'
