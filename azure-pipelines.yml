@@ -15,13 +15,17 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: dotnet restore
-- task: DotNetCoreCLI@2
-  displayName: Build
+- task: NuGetToolInstaller@1
+
+- task: NuGetCommand@2
   inputs:
-    command: build
-    projects: '**/*.sln'
-    arguments: '--configuration Release' # Update this to match your need
+    restoreSolution: '$(solution)'
+- task: VSBuild@1
+  inputs:
+    solution: '$(solution)'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+    msbuildArgs: '--output $(Build.ArtifactStagingDirectory)'
 
 - task: DotNetCoreCLI@2
   inputs:
