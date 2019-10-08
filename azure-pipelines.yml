@@ -35,6 +35,6 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'push'
-    packagesToPush: '*Microsoft.Extensions.DependencyInjection.AutoConfig*.nupkg'
+    packagesToPush: '$(BaseOutputPath)**/*.nupkg'
     nuGetFeedType: 'internal'
     publishVstsFeed: 'c7c0e002-e845-4942-ba10-724e9111e4c1'
