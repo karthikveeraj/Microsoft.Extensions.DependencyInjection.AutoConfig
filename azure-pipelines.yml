@@ -26,15 +26,10 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: DotNetCoreCLI@2
-  inputs:
-    command: test
-    projects: '**/*.Tests.csproj'
-    arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
-
-
 - powershell: |
-    Write-Host $(Build.ArtifactStagingDirectory)
+    Write-Host 'ArtifactStagingDirectory : ' + $(Build.ArtifactStagingDirectory)
+    Write-Host 'SourcesDirectory : ' + $(Build.SourcesDirectory)
+    Write-Host 'Repository.LocalPath : ' + $(Build.Repository.LocalPath)
   displayName: local variable
 
 - task: DotNetCoreCLI@2
