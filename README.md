@@ -1,6 +1,9 @@
 # Microsoft.Extensions.DependencyInjection.AutoConfig
 [![Build Status](https://karthikveeraj.visualstudio.com/Microsoft.Extensions.DependencyInjection.AutoConfig/_apis/build/status/karthikveeraj.Microsoft.Extensions.DependencyInjection.AutoConfig?branchName=master)](https://karthikveeraj.visualstudio.com/Microsoft.Extensions.DependencyInjection.AutoConfig/_build/latest?definitionId=2&branchName=master)
 
+
+![NuGet](https://img.shields.io/nuget/v/Microsoft.Extensions.DependencyInjection.AutoConfig.svg)
+
 When you work on bigger projects, you need to write long list repetative lines of code to register interface types and their realizations. I wanted to avoid such piece of code and automate it so that we don't have to worry about registering specific types.
 
 Instead of registering multiple types individually, AutoConfig provides an option to register the whole assembly itself which internatlly identifiers all the interfaces and their implementors and registers them. If there is a more than one implementation for a specific interface, it gives an option to mention which type you would like to resolve.
