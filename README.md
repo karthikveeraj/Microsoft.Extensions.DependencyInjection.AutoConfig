@@ -1,6 +1,6 @@
 # Microsoft.Extensions.DependencyInjection.AutoConfig
 ![License](https://img.shields.io/github/license/karthikveeraj/Microsoft.Extensions.DependencyInjection.AutoConfig) 
-[![Build Status](https://karthikveeraj.visualstudio.com/Microsoft.Extensions.DependencyInjection.AutoConfig/_apis/build/status/karthikveeraj.Microsoft.Extensions.DependencyInjection.AutoConfig?branchName=master)](https://karthikveeraj.visualstudio.com/Microsoft.Extensions.DependencyInjection.AutoConfig/_build/latest?definitionId=2&branchName=master) ![NuGet](https://img.shields.io/nuget/v/Karthik.Veeraj.Microsoft.Extensions.DependencyInjection.AutoConfig.svg)
+[![Build Status](https://karthikveeraj.visualstudio.com/Microsoft.Extensions.DependencyInjection.AutoConfig/_apis/build/status/karthikveeraj.Microsoft.Extensions.DependencyInjection.AutoConfig?branchName=master)](https://karthikveeraj.visualstudio.com/Microsoft.Extensions.DependencyInjection.AutoConfig/_build/latest?definitionId=2&branchName=master) ![NuGet](https://img.shields.io/nuget/v/KarthikVeeraj.Microsoft.Extensions.DependencyInjection.AutoConfig.svg)
 
 When you work on bigger projects, you need to write long list repetative lines of code to register interface types and their realizations. I wanted to avoid such piece of code and automate it so that we don't have to worry about registering specific types.
 
