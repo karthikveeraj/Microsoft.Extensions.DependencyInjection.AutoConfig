@@ -43,11 +43,9 @@ steps:
     packDirectory: '$(build.artifactStagingDirectory)'
     versioningScheme: byBuildNumber # https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/dotnet-core-cli?view=azure-devops#yaml-snippet
 
-- task: NuGetCommand@2
-  displayName: 'NuGet publish'
+- task: DotNetCoreCLI@2
   inputs:
     command: 'push'
-    vstsFeed: 'c7c0e002-e845-4942-ba10-724e9111e4c1'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
     nuGetFeedType: 'internal'
     publishVstsFeed: 'c7c0e002-e845-4942-ba10-724e9111e4c1'
