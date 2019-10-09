@@ -41,6 +41,13 @@ steps:
     projects: '*.Tests/*.csproj'
     arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
 
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'XUnit'
+    testResultsFiles: '**/TEST-*.xml'
+    mergeTestResults: true
+    testRunTitle: 'xUnit Test Results'
+    
 - task: DotNetCoreCLI@2
   displayName: 'NuGet pack'
   inputs:
