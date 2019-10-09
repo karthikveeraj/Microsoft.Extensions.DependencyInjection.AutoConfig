@@ -34,20 +34,11 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: DotNetCoreCLI@2
-  displayName: 'Generate Code Coverage Report'
+- task: VSTest@2
   inputs:
-    command: test
-    projects: '*.Tests/*.csproj'
-    arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
+    testSelector: 'testRun'
+    searchFolder: '$(System.DefaultWorkingDirectory)'
 
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'XUnit'
-    testResultsFiles: '**/TEST-*.xml'
-    mergeTestResults: true
-    testRunTitle: 'xUnit Test Results'
-    
 - task: DotNetCoreCLI@2
   displayName: 'NuGet pack'
   inputs:
