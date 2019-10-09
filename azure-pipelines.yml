@@ -26,15 +26,9 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- powershell: |
-    Write-Host 'ArtifactStagingDirectory : ' + $(Build.ArtifactStagingDirectory)
-    Write-Host 'SourcesDirectory : ' + $(Build.SourcesDirectory)
-    Write-Host 'Repository.LocalPath : ' + $(Build.Repository.LocalPath)
-  displayName: local variable
-
 - task: DotNetCoreCLI@2
   inputs:
     command: 'push'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
+    packagesToPush: '$(Build.SourcesDirectory)/*.nupkg'
     nuGetFeedType: 'external'
     publishFeedCredentials: 'NuGetConnection'
