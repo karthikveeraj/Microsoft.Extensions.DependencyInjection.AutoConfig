@@ -35,6 +35,13 @@ steps:
     configuration: '$(buildConfiguration)'
 
 - task: DotNetCoreCLI@2
+  displayName: 'Generate Code Coverage Report'
+  inputs:
+    command: test
+    projects: '*.Tests/*.csproj'
+    arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
+
+- task: DotNetCoreCLI@2
   displayName: 'NuGet pack'
   inputs:
     command: 'pack'
@@ -49,3 +56,4 @@ steps:
     packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
     nuGetFeedType: 'internal'
     publishVstsFeed: '84640fe1-1335-4d8a-92d6-734de93b358a'
+
