@@ -78,3 +78,8 @@ namespace Microsoft.Extensions.DependencyInjection.AutoConfig
     }
 }
 ```
+
+License
+---
+Microsoft.Extensions.DependencyInjection.AutoConfig is open source software, licensed under the terms of MIT license.
+See [LICENSE.txt](LICENSE.txt) for details.
