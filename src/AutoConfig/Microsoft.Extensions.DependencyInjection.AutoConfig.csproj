@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Microsoft.Extensions.DependencyInjection.AutoConfig</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Authors>Karthik D V</Authors>
     <Description>AutoConfig provides an option to register the whole assembly which internatlly identifiers all the interfaces and their implementors and registers them automatically for you. If there are more than one implementation for a specific interface, it gives an option to mention which type you would like to resolve.</Description>
     <RepositoryUrl>https://github.com/karthikveeraj/Microsoft.Extensions.DependencyInjection.AutoConfig</RepositoryUrl>
