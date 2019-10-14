@@ -10,12 +10,12 @@ Instead of registering multiple types individually, AutoConfig provides an optio
 
 Visual Studio:
 ```powershell
-PM> Install-Package Microsoft.Extensions.DependencyInjection.AutoConfig
+PM> Install-Package KarthikVeeraj.Microsoft.Extensions.DependencyInjection.AutoConfig
 ```
 
 .NET Core CLI:
 ```bash
-dotnet add package Microsoft.Extensions.DependencyInjection.AutoConfig
+dotnet add package KarthikVeeraj.Microsoft.Extensions.DependencyInjection.AutoConfig
 ```
 
 ## Sample appSetings.config file
