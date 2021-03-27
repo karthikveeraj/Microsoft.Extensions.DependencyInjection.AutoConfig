@@ -15,8 +15,8 @@
     <PackageReleaseNotes>First release.</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageId>Ckp.Microsoft.Extensions.DependencyInjection.AutoConfig</PackageId>
-    <Product>Ckp.Microsoft.Extensions.DependencyInjection.AutoConfig</Product>
+    <PackageId>Ckp.DependencyInjection.AutoConfig</PackageId>
+    <Product>Ckp.DependencyInjection.AutoConfig</Product>
   </PropertyGroup>
 
   <Import Project="..\Models\Microsoft.Extensions.DependencyInjection.Models.projitems" Label="Shared" />
