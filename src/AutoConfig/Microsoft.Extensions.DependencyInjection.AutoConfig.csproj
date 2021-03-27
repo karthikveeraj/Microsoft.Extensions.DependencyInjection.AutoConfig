@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>Microsoft.Extensions.DependencyInjection.AutoConfig</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.3</Version>
+    <Version>0.0.4</Version>
     <Authors>Karthik D V</Authors>
     <Description>AutoConfig provides an option to register the whole assembly which internatlly identifiers all the interfaces and their implementors and registers them automatically for you. If there are more than one implementation for a specific interface, it gives an option to mention which type you would like to resolve.</Description>
     <RepositoryUrl>https://github.com/karthikveeraj/Microsoft.Extensions.DependencyInjection.AutoConfig</RepositoryUrl>
@@ -20,8 +20,8 @@
   <Import Project="..\Models\Microsoft.Extensions.DependencyInjection.Models.projitems" Label="Shared" />
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
   </ItemGroup>
 
   <ItemGroup>

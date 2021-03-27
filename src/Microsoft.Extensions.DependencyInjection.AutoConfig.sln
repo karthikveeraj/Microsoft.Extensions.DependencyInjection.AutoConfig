@@ -16,7 +16,9 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		..\tests\Shared\Microsoft.Extensions.DependencyInjection.AutoConfig.Test.Shared.projitems*{0c7ee911-607d-4733-baf0-3359931df8cc}*SharedItemsImports = 13
+		Models\Microsoft.Extensions.DependencyInjection.Models.projitems*{61dd122f-1d52-4aaa-be67-5b4f81405f84}*SharedItemsImports = 5
 		Models\Microsoft.Extensions.DependencyInjection.Models.projitems*{91d10c15-70ad-4dfc-9942-3f775004e125}*SharedItemsImports = 13
+		..\tests\Shared\Microsoft.Extensions.DependencyInjection.AutoConfig.Test.Shared.projitems*{fa6ba79d-54c3-44e6-90ec-dd40226bd5bb}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
