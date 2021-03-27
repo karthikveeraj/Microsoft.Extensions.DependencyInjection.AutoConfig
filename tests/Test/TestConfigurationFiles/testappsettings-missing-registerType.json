@@ -10,8 +10,8 @@
 
     "registerTypes": [
       {
-        "from": "Microsoft.Extensions.DependencyInjection.ITypeRegistration2, Microsoft.Extensions.DependencyInjection.AutoConfig",
-        "to": "Microsoft.Extensions.DependencyInjection.TypeRegistration, Microsoft.Extensions.DependencyInjection.AutoConfig",
+        "from": "Microsoft.Extensions.DependencyInjection.ITypeRegistration2, Ckp.Microsoft.Extensions.DependencyInjection.AutoConfig",
+        "to": "Microsoft.Extensions.DependencyInjection.TypeRegistration, Ckp.Microsoft.Extensions.DependencyInjection.AutoConfig",
         "type": "Transient"
       }
     ]

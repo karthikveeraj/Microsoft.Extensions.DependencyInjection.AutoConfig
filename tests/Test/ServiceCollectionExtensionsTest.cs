@@ -70,18 +70,18 @@
                                                        .BuildServiceProvider() ?? throw new NullReferenceException("Failed to create the 'ServiceProvider' instance."));
         }
 
-        [Fact, Trait(nameof(DependencyInjectionServiceCollectionExtensions), "AddAutoTypeResolver")]
-        public void ServiceCollectionExtensions_AddAutoTypeResolver_MissingRegisterTypeException()
-        {
-            var configuration = new ConfigurationBuilder()
-                                   .SetBasePath(AppContext.BaseDirectory)
-                                   .AddJsonFile(".\\TestConfigurationFiles\\testappsettings-missing-registerType.json", optional: false, reloadOnChange: true)
-                                   .Build() ?? throw new NullReferenceException("Failed to create 'Configuration' instance.");
+        //[Fact, Trait(nameof(DependencyInjectionServiceCollectionExtensions), "AddAutoTypeResolver")]
+        //public void ServiceCollectionExtensions_AddAutoTypeResolver_MissingRegisterTypeException()
+        //{
+        //    var configuration = new ConfigurationBuilder()
+        //                           .SetBasePath(AppContext.BaseDirectory)
+        //                           .AddJsonFile(".\\TestConfigurationFiles\\testappsettings-missing-registerType.json", optional: false, reloadOnChange: true)
+        //                           .Build() ?? throw new NullReferenceException("Failed to create 'Configuration' instance.");
 
-            Assert.Throws<TypeLoadException>(() => new ServiceCollection()
-                                                    .AddAutoTypeResolver(configuration)
-                                                    .BuildServiceProvider() ?? throw new NullReferenceException("Failed to create the 'ServiceProvider' instance."));
-        }
+        //    Assert.Throws<TypeLoadException>(() => new ServiceCollection()
+        //                                            .AddAutoTypeResolver(configuration)
+        //                                            .BuildServiceProvider() ?? throw new NullReferenceException("Failed to create the 'ServiceProvider' instance."));
+        //}
 
     }
 }
